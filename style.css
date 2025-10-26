@@ -67,12 +67,13 @@ body {
   border: 3px yellow;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .Nom-card {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 1px;
+  margin-bottom: 10px;
 }
 .item img {
   width: 20px;
@@ -87,16 +88,16 @@ body {
   font-size: 7px;
 }
 .item p:first-child {
-  font-size: 13px;
-
+  font-size: 10px;
+  margin-top: 1rem;
   font-weight: 500;
-
+  margin-top: 2rem;
   z-index: 2;
   position: relative;
 }
 .item p:last-child {
   font-size: 8px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 /**** ITEM1******/
 .item1 {
@@ -160,10 +161,51 @@ p:first-child {
 /********ITEM4*****/
 .item4 {
   grid-area: item4;
-  background-color: rgba(0, 0, 255, 0.2); /* Fond pour visualiser */
+  background-color: var(--White-prim);
 }
-
+/**********ITEM5*******/
 .item5 {
   grid-area: item5;
-  background-color: rgba(255, 165, 0, 0.2); /* Fond pour visualiser */
+  background-color: var(--Dark-blue);
+  color: var(--White-prim);
+}
+.item5 h2 {
+  color: var(--Grey-500);
+}
+.item5 p:last-child {
+  color: var(--Grey-200);
+}
+.item5 img {
+  border: 1px solid var(--Purple-500);
+}
+/*********** MEDIA QUERY***********/
+
+@media (width <=320px) {
+  .grid-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1rem;
+  }
+  .item {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (width <=768px) {
+  .grid-container {
+    margin: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    gap: 1rem;
+  }
+  .item {
+    width: 300px;
+    height: 300px;
+  }
 }
