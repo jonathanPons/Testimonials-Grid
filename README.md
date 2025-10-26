@@ -61,10 +61,6 @@ Responsive Design — media queries for adaptability
 
 📏 < 320px — single-column layout
 
-📏 < 768px — two-column grid
-
-💻 ≥ 768px — full grid layout with 5 testimonial cards
-
 🧠 Key Code Features
 
 CSS variables for consistent color and typography management
@@ -101,6 +97,6 @@ Integrate JavaScript for enhanced features (carousel, filtering, etc.)
 🧑‍💻 Author
 
 Your Name
-💼 Portfolio
+💼 Portfolio https://jonathanpons.github.io/Portfolio-static-HTML-CSS/
 
-🐙 GitHub
+🐙 GitHub https://github.com/jonathanPons
